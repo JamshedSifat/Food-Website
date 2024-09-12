@@ -53,7 +53,7 @@ section nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: #fac031;
+    background: #ef320c;
     display: block;
     transition: 0.2s linear;
 }
@@ -63,7 +63,7 @@ section nav ul li a:hover::after{
 }
 
 section nav ul li a:hover{
-    color: #fac031;
+    color: #ef320c;
 }
 
 section nav .icon i{
@@ -75,7 +75,7 @@ section nav .icon i{
 }
 
 section nav .icon i:hover{
-    color: #fac031;
+    color: #ef320c;
 }
 
 section .main{
@@ -95,7 +95,7 @@ section .main .men_text h1{
 
 section .main .men_text h1 span{
     margin-left: 15px;
-    color: #fac031;
+    color: #ef320c;
     font-family: mv boli;
     line-height: 22px;
     font-size: 70px;
@@ -117,13 +117,15 @@ section p{
 }
 
 section .main_btn{
-    background: #fac031;
+    background: #ef320c;
     position: relative;
     left: 123px;
     bottom: 30px;
     width: 150px;
     cursor: pointer;
     padding: 12px 25px;
+    border-radius: 20px;
+    box-shadow: #05ce4c;
 }
 
 section .main_btn a{
@@ -164,7 +166,7 @@ section .main_btn:hover i{
 }
 
 .about .about_main .about_text h1 span{
-    color: #fac031;
+    color: #ef320c;
     margin-right: 15px;
     font-family: mv boli;
 }
@@ -188,13 +190,14 @@ section .main_btn:hover i{
 }
 
 .about .about_btn{
-    background: #fac031;
+    background: #ef320c;
     padding: 12px 25px;
     text-decoration: none;
     color: #fff;
     position: relative;
     left: 55%;
     bottom: 30px;
+    border-radius: 20px;
 }
 
 
@@ -215,7 +218,7 @@ section .main_btn:hover i{
 }
 
 .menu h1 span{
-    color: #fac031;
+    color: #ef320c;
     margin-left: 15px;
     font-family: mv boli;
 }
@@ -297,7 +300,7 @@ section .main_btn:hover i{
 }
 
 .menu .menu_box .menu_card .small_card i:hover{
-    color: #fac031;
+    color: #ef320c;
 }
 
 .menu .menu_box .menu_card .menu_info h2{
@@ -305,7 +308,7 @@ section .main_btn:hover i{
     text-align: center;
     margin: 10px auto 10px auto;
     font-size: 25px;
-    color: #fac031;
+    color: #ef320c;
 }
 
 .menu .menu_box .menu_card .menu_info p{
@@ -320,7 +323,7 @@ section .main_btn:hover i{
 }
 
 .menu .menu_box .menu_card .menu_info .menu_icon{
-    color: #fac031;
+    color: #ef320c;
     text-align: center;
     margin: 10px 0 10px 0;
 }
@@ -355,7 +358,7 @@ section .main_btn:hover i{
 
 .gallary h1 span{
     margin-left: 15px;
-    color: #fac031;
+    color: #ef320c;
     font-family: mv boli;
 }
 
@@ -363,7 +366,7 @@ section .main_btn:hover i{
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+    background: #ef320c;
     display: block;
     position: relative;
     bottom: 15px;
@@ -397,7 +400,7 @@ section .main_btn:hover i{
     position: absolute;
     font-size: 35px;
     margin-bottom: 130px;
-    color: #fac031;
+    color: #ef320c;
     font-family: polo;
     z-index: 5;
     opacity: 0;
@@ -428,7 +431,7 @@ section .main_btn:hover i{
     position: absolute;
     margin-top: 180px;
     color: #000;
-    background: #fac031;
+    background: #ef320c;
     padding: 7px 25px;
     text-decoration: none;
     opacity: 0;
@@ -461,7 +464,7 @@ section .main_btn:hover i{
 
 .review h1 span{
     margin-left: 15px;
-    color: #fac031;
+    color: #ef320c;
     font-family: mv boli;
 }
 
@@ -469,7 +472,7 @@ section .main_btn:hover i{
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+    background: #ef320c;
     position: relative;
     bottom: 15px;
     display: block;
@@ -525,7 +528,7 @@ section .main_btn:hover i{
 }
 
 .review .review_box .review_card .review_text .review_icon{
-    color: #fac031;
+    color: #ef320c;
     transition: 0.3s;
 }
 
@@ -735,7 +738,7 @@ section .main_btn:hover i{
 }
 
 .team .team_box .profile .info .name{
-    color: #fac031;
+    color: #ef320c;
     margin-bottom: 15px;
 }
 
@@ -752,7 +755,7 @@ section .main_btn:hover i{
 }
 
 .team .team_box .profile .info .team_icon i:hover{
-    color: #fac031;
+    color: #ef320c;
 }
 
 
@@ -790,7 +793,7 @@ footer .footer_main .footer_tag i{
 }
 
 footer .footer_main .footer_tag i:hover{
-    color: #fac031;
+    color: #ef320c;
 }
 
 footer .end{
@@ -801,7 +804,7 @@ footer .end{
 }
 
 footer .end span{
-    color: #fac031;
+    color: #ef320c;
     margin-left: 10px;
 }
 
@@ -815,6 +818,6 @@ footer .end span{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #fac031;
+    background: #ef320c;
     border-radius: 15px;
 }
