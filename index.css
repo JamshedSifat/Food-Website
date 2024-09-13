@@ -76,7 +76,7 @@ section nav .icon i {
 }
 
 section nav .icon i:hover {
-    color: #fac031;
+    color: #f62746;
 }
 
 /* Mobile responsiveness */
@@ -128,116 +128,103 @@ section nav .icon i:hover {
     }
 }
 
-
+/* General Styles for Desktop */
 section .main {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
-    top: 130px;
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    top: 120px;
+    flex-wrap: nowrap; /* Ensure side-by-side layout on larger screens */
 }
 
 section .main .men_text h1 {
-    font-size: 60px;
-    position: relative;
-    top: -90px;
-    left: 20px;
+    font-size: 40px;
+    position:relative;
     text-align: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 section .main .men_text h1 span {
-    margin-left: 15px;
-    color: #fac031;
+    color: #fe016a;
     font-family: mv boli;
     line-height: 22px;
-    font-size: 70px;
+    font-size: 50px;
+    
 }
 
 section .main .main_image img {
-    width: 500px;
+    width: 330px;
     position: relative;
-    left: 150px;
+    left: 0;
+    margin-left: auto; /* Align image to the right */
 }
 
 section p {
-    width: 200px;
+    
+    width: 300px;
     text-align: justify;
-    position: relative;
-    left: 50px;
-    bottom: 100px;
-    line-height: 20px;
+    line-height: 25px;
+    margin-right:30px; /* Ensure some space between text and image */
 }
 
 section .main_btn {
     background: #f62746;
-    position: relative;
-    left: 200px;
-    bottom: 60px;
-    width: 140px;
     cursor: pointer;
     padding: 12px 25px;
     text-align: center;
-    border-radius: 12px; /* Center text within button */
+    border-radius: 12px;
+    margin-top: 20px;
 }
 
 section .main_btn a {
-    color: #fff;
-    margin-right: 5px;
+    color: #faf7f7;
     text-decoration: none;
 }
 
-section .main_btn i {
-    color: #fff;
-    transition: 0.3s;
-}
-
 section .main_btn:hover i {
-    transform:translate(200px);
-    
+    transform: translate(200px);
 }
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     section .main {
         flex-direction: column;
-        align-items: center;
-        top-10px; /* Adjust top position for mobile */
+        align-items:center;
+        top: 100px; /* Adjust top position for mobile */
     }
 
     section .main .men_text h1 {
-        font-size: 30px;
-        top: 0; /* Reset top position for mobile */
-        left: 0; /* Reset left position for mobile */
+        font-size: 59px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     section .main .men_text h1 span {
-        font-size: 60px;
+        font-size: 70px;
     }
 
     section .main .main_image img {
-        width: 100%;
-        max-width: 300px; /* Limit image size on mobile */
+        width: 90%;
+        max-width: 500px; /* Limit image size on mobile */
+        margin-top: 10px;
         position: relative;
-        left: 0; /* Reset left position for mobile */
-        margin-top: 10px; /* Add some space above the image */
+        margin-left: 100px;
+        margin-bottom: 80px;
     }
 
     section p {
         width: 100%;
-        text-align: center; /* Center text on mobile */
-        left: 10px; /* Reset left position for mobile */
-        bottom: 0; /* Reset bottom position for mobile */
-        margin-top: 20px; /* Add some space above the paragraph */
+        text-align: justify;
+        margin: 20px ; /* Add spacing above and below paragraph */
     }
 
     section .main_btn {
-        width: auto; /* Allow button to adjust width based on content */
-        padding: 10px 20px;
-        left: 0; /* Reset left position for mobile */
-        bottom: 0; /* Reset bottom position for mobile */
-        margin-top: 20px; /* Add space above button */
-        text-align: center; /* Center text within button */
+        width: 150px; /* Adjust button width */
+        padding: 15px 20px;
+        margin-top: 20px;
+        margin: 30px;
     }
 }
 
@@ -271,9 +258,9 @@ section .main_btn:hover i {
 }
 
 .about .about_main .about_text h1 {
-    font-size: 60px;
+    font-size: 70px;
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
 }
 
 .about .about_main .about_text h3 {
@@ -284,7 +271,8 @@ section .main_btn:hover i {
 .about .about_main .about_text p {
     width: 680px;
     text-align: justify;
-    margin-right: 30px;
+    margin-right:30px;
+    margin: 20px;
     line-height: 22px;
 }
 
@@ -295,8 +283,8 @@ section .main_btn:hover i {
     color: #fff;
     position: relative;
     left: 55%;
-    bottom:  0px;
-    top: 50px;
+    bottom: 0px;
+    top: 10px;
     border-radius: 12px;
 }
 
@@ -316,8 +304,9 @@ section .main_btn:hover i {
     .about .about_main .image img {
         width: 100%;
         max-width: 400px; /* Limit image size on mobile */
-        position: static; /* Remove top position for mobile */
-        margin-top: 20px; /* Add space above the image */
+        position:static; /* Remove top position for mobile */
+        margin-top: 20px;
+        margin-left: 200px; /* Add space above the image */
     }
 
     .about .about_main .about_text h1 {
@@ -333,24 +322,22 @@ section .main_btn:hover i {
     .about .about_main .about_text p {
         width: 90%;
         margin-right: 0; /* Remove right margin for mobile */
-        margin-left: 0; /* Add left margin for center alignment */
+        margin-left: 30; /* Add left margin for center alignment */
     }
 
     .about .about_btn {
         width: auto; /* Allow button to adjust width based on content */
         padding: 10px 20px;
         position: static; /* Remove position for mobile */
-        margin-top: 20px; /* Add space above the button */
+        margin-top: 30px; /* Add space above the button */
     }
 }
-
-
 
 /*Menu*/
 
 .menu {
     width: 100%;
-    padding: 60px 0px;
+    padding: 80px 0px;
 }
 
 .menu h1 {
@@ -468,7 +455,7 @@ section .main_btn:hover i {
 }
 
 .menu .menu_box .menu_card .menu_info .menu_icon {
-    color: #fac031;
+    color: #fe016a;
     text-align: center;
     margin: 10px 0;
 }
@@ -536,8 +523,8 @@ section .main_btn:hover i {
 
 /*Gallary*/
 .gallary {
-    width: 100%;
-    padding: 60px 0;
+    width: 150%;
+    padding: 60px 60px ;
 }
 
 .gallary h1 {
@@ -565,7 +552,7 @@ section .main_btn:hover i {
 }
 
 .gallary .gallary_image_box {
-    width: 95%;
+    width: 70%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -647,6 +634,7 @@ section .main_btn:hover i {
     .gallary .gallary_image_box {
         grid-template-columns: 2fr 2fr; /* Adjust to 2 columns on smaller screens */
         grid-gap: 10px;
+        
     }
 
     .gallary .gallary_image_box .gallary_image {
@@ -880,7 +868,7 @@ section .main_btn:hover i {
 
     .review .review_box .review_card .review_profile img {
         width: 120px; /* Further reduce profile image size */
-        height: 120px;
+        height: 100px;
     }
 
     .review .review_box .review_card .review_text .name {
@@ -911,6 +899,7 @@ section .main_btn:hover i {
     background-image: url(image/bg2.jpg);
     background-size: cover;
     background-position: center;
+    margin-top:340% ;
 }
 
 .order h1 {
@@ -922,7 +911,7 @@ section .main_btn:hover i {
 }
 
 .order h1 span {
-    color: #fac031;
+    color: #fe016a;
     margin-right: 15px;
     font-family: mv boli;
 }
@@ -931,7 +920,7 @@ section .main_btn:hover i {
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+    background: #fe016a;
     display: block;
     position: relative;
     bottom: 15px;
@@ -977,12 +966,12 @@ section .main_btn:hover i {
 }
 
 .order .order_main form .input input:focus {
-    border: 2px solid #fac031;
+    border: 2px solid #fe016a;
 }
 
 .order .order_main form .order_btn {
     padding: 10px 0;
-    background: #fac031;
+    background: #fe016a;
     color: white;
     width: 100%; /* Make button full width */
     max-width: 300px; /* Limit button width on larger screens */
@@ -1060,7 +1049,7 @@ section .main_btn:hover i {
 }
 
 .team h1 span {
-    color: #fac031;
+    color: #fe016a;
     margin-left: 15px;
     font-family: mv boli;
 }
@@ -1069,7 +1058,7 @@ section .main_btn:hover i {
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+    background: #fe016a;
     display: block;
     position: relative;
     bottom: 15px;
@@ -1133,7 +1122,7 @@ section .main_btn:hover i {
 }
 
 .team .team_box .profile .info .name {
-    color: #fac031;
+    color: #fe016a;
     margin-bottom: 15px;
 }
 
@@ -1224,6 +1213,7 @@ footer .footer_main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px; /* Add gap between columns */
+    ;
 }
 
 footer .footer_main .footer_tag {
@@ -1246,7 +1236,7 @@ footer .footer_main .footer_tag i {
 }
 
 footer .footer_main .footer_tag i:hover {
-    color: #fac031;
+    color: #fe016a;
 }
 
 footer .end {
@@ -1257,7 +1247,7 @@ footer .end {
 }
 
 footer .end span {
-    color: #fac031;
+    color: #fe016a;
     margin-left: 10px;
 }
 
@@ -1271,7 +1261,7 @@ footer .end span {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fac031;
+    background: #fe016a;
     border-radius: 15px;
 }
 
