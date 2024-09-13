@@ -489,7 +489,7 @@ section .main_btn:hover i{
 
 
 /*Review*/
-
+@media (max-width: 768px) {
 .review{
     width: 100%;
     height: 100vh;
@@ -523,15 +523,18 @@ section .main_btn:hover i{
     width: 95%;
     margin: 70px auto;
     display: flex;
+    flex-direction: column;
 }
 
 .review .review_box .review_card{
-    width: 350px;
+    width: 100%;
+    margin-bottom: 20px;
     height: 535px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     border-radius: 8px;
     padding: 8px 20px;
     margin: 0 8px;
+}
 }
 
 .review .review_box .review_card .review_profile{
@@ -603,6 +606,7 @@ section .main_btn:hover i{
 
 
 /*Order*/
+@media (max-width: 768px) {
 
 .order{
     width: 100%;
@@ -641,16 +645,20 @@ section .main_btn:hover i{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .order .order_main .order_image img{
-    width: 600px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .order .order_main form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 10px;
+    grid-template-columns: 1fr;
 }
 
 .order .order_main form .input p{
@@ -662,7 +670,7 @@ section .main_btn:hover i{
 }
 
 .order .order_main form .input input{
-    width: 300px;
+    width: auto;
     height: 35px;
     padding: 0 10px;
     border: 2px solid #cccccc;
@@ -679,17 +687,18 @@ section .main_btn:hover i{
     padding: 10px 0;
     background: #e40c0c;;
     color: white;
-    width: 40%;
+    width: auto;
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
+}
 }
 
 
 
 
 /*Team*/
-
+@media (max-width: 768px) {
 .team{
     width: 100%;
     height: 90vh;
@@ -730,10 +739,12 @@ section .main_btn:hover i{
     justify-content: center;
     position: relative;
     top: 13%;
+    flex-direction: column;
 }
 
 .team .team_box .profile{
-    width: 320px;
+    width: 80%;
+     margin-bottom: 20px;
     height: 320px;
     border-radius: 50%;
     margin: 0 15px;
@@ -751,8 +762,8 @@ section .main_btn:hover i{
 }
 
 .team .team_box .profile img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -770,7 +781,7 @@ section .main_btn:hover i{
 .team .team_box .profile .info{
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 50%;
     transition: 0.4s;
 }
 
@@ -798,20 +809,24 @@ section .main_btn:hover i{
 .team .team_box .profile .info .team_icon i:hover{
     color: #ef320c;
 }
+}
 
 
 
 /*Footer*/
 
+@media (max-width: 768px) {
 footer{
     width: 100%;
     padding: 30px 0 0 20px;
     background: #eeeeee;
 }
-
+@media (max-width: 480px) {
 footer .footer_main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+}
 }
 
 footer .footer_main .footer_tag{
